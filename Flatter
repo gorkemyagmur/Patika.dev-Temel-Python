@@ -1,0 +1,12 @@
+input = [[1,'a',['cat'],2],[[[3]],'dog'],4,5]
+
+flat_list = []
+def flat(l):
+    for i in l:
+        if type(i) == list:
+            flat(i)
+        else:
+            flat_list.append(i)
+    return flat_list
+    
+    flat(input)
