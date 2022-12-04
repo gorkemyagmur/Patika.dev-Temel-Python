@@ -1,0 +1,19 @@
+input = [[1, 2], [3, 4], [5, 6, 7]]
+
+aa = []
+
+def opposite(inp):
+    inp.reverse()
+    for i in inp:
+        if type(i)==list:
+            i.reverse()
+            aa.append(i)
+    return aa
+        
+opposite(input)
+
+
+
+
+
+www.patika.dev 
